@@ -25,13 +25,14 @@ p{
 }
 .link a{
   text-decoration: none;
+  margin-right:30px ;
   color: rgb(42, 36, 12);
 
 }
 .title{
   text-align: center;
-  background: black;
-  color: #FAF3F0;
+  background: #f6f0e1;
+  color: rgb(214, 161, 56);
   font-family: 'Times New Roman', Times, serif;
   word-spacing: 15px ;
 
@@ -46,9 +47,11 @@ p{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   background: white;
+
 }
 .Products img{
   width: 300px;
+  height: 300px;
   background: rgb(244, 244, 244);
 }
 #star1{

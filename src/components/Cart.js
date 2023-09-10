@@ -18,7 +18,8 @@ export const Cart = () => {
       </div>
       
       <div className="priceContainer">
-        <div className="price">
+      {totalAmount==0?<h1>Your Cart Is Empty</h1>:
+      <div><div className="price">
           <p>Net Price</p>
           <p>₹{totalAmount}</p>
         </div>
@@ -30,7 +31,8 @@ export const Cart = () => {
         <p>Payable Amount</p>
         <p>₹{totalAmount - discount}
         </p></div>
-        <button id="priceButton">Check out( ₹{totalAmount - discount})</button>
+        <button id="priceButton">Check out( ₹{totalAmount - discount})</button></div>}
+        
       </div>
     </div>
   );
