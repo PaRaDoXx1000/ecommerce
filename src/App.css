@@ -3,8 +3,7 @@ body{
   padding: 0px;
   background: rgb(243, 236, 222);
   font-family: 'Abel', sans-serif;
-font-family: 'Bruno Ace SC', cursive;
-font-family: 'Oswald', sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
 p{
   margin: 0px;
@@ -15,7 +14,12 @@ p{
   justify-content: space-between;
   background: rgb(219, 192, 139);
   color: rgb(42, 36, 12);
-  
+  height: 70px;
+}
+.navbar h2{
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  margin-left: 30px;
 }
 .link{
   display: flex;
@@ -33,7 +37,7 @@ p{
   text-align: center;
   background: #f6f0e1;
   color: rgb(214, 161, 56);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Dancing Script', cursive;
   word-spacing: 15px ;
 
 }
@@ -101,6 +105,12 @@ input{
   align-items: center;
 
 }
+.emptyCart{
+  font-family: 'Dancing Script', cursive;
+  color: #524b34;
+  text-align: center;
+  
+}
 .slides{
   display: flex;
   flex-direction: column;
@@ -113,6 +123,7 @@ input{
   margin-top: 30px;
   word-spacing: 6px;
   font-size: 20px;
+  font-weight: bolder;
 }
 .price{
   display: flex;

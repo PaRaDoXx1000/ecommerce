@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { product } from "./products";
 import { ShopContext } from "./ShopContext";
 import CartItems from "./CartItems";
+import { SmileySad } from "phosphor-react";
 export const Cart = () => {
   const { cartItem, getTotalAmount } = useContext(ShopContext);
   const totalAmount = getTotalAmount();
@@ -18,8 +19,11 @@ export const Cart = () => {
       </div>
       
       <div className="priceContainer">
-      {totalAmount==0?<h1>Your Cart Is Empty</h1>:
-      <div><div className="price">
+      {totalAmount==0?<div className="emptyCart">
+      <h1>Your Cart Is Empty</h1>
+      <SmileySad size={50}></SmileySad>
+      </div>:
+      <div ><div className="price">
           <p>Net Price</p>
           <p>₹{totalAmount}</p>
         </div>
